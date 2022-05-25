@@ -12,6 +12,7 @@
     <script src="https://unpkg.com/leaflet@1.8.0/dist/leaflet.js"
             integrity="sha512-BB3hKbKWOc9Ez/TAwyWxNXeoV9c1v6FIeYiBieIWkpLjauysF18NzgR1MBNBXf8/KABdlkX68nAhlwcDFLGPCQ=="
             crossorigin=""></script>
+    <script src="https://unpkg.com/leaflet-rotate@0.1.4/dist/leaflet-rotate-src.js"></script>
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="style2.css">
 
@@ -53,9 +54,14 @@
 <script>
     var map = L.map('map', {
         crs: L.CRS.Simple,
-        minZoom: -1,
+        minZoom: 3,
         attributionControl: false,
         contextmenu: true,
+        rotate: true,
+        touchRotate: true,
+        rotateControl: {
+            closeOnZeroBearing: false
+        },
         contextmenuWidth: 140,
         contextmenuItems: [{
             text: 'Show coordinates',
@@ -63,7 +69,7 @@
         }]
     });
     var bounds = [[0,0], [359,1852]];
-    var image = L.imageOverlay('images/3floor(crop).png', bounds).addTo(map);
+    var image = L.imageOverlay('static/img/sample_floor.svg', bounds).addTo(map);
 
     map.zoomControl.setPosition('bottomright');
 
