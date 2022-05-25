@@ -23,16 +23,16 @@
         <input type="text" id="input">
 
         <div class="auditories">
-            <li>Первый</li>
-            <li>Второй</li>
-            <li>Третий</li>
-            <li>Четвертый</li>
-            <li>Пятый</li>
-            <li>Шестой</li>
-            <li>Седьмой</li>
-            <li>Восьмой</li>
-            <li>Девятый</li>
-            <li>Десятый</li>
+            <li class="hide">Первый</li>
+            <li class="hide">Второй</li>
+            <li class="hide">Третий</li>
+            <li class="hide">Четвертый</li>
+            <li class="hide">Пятый</li>
+            <li class="hide">Шестой</li>
+            <li class="hide">Седьмой</li>
+            <li class="hide">Восьмой</li>
+            <li class="hide">Девятый</li>
+            <li class="hide">Десятый</li>
         </div>
     </div>
 <div id="map"></div>
@@ -54,7 +54,7 @@
 <script>
     var map = L.map('map', {
         crs: L.CRS.Simple,
-        minZoom: 2,
+        minZoom: 3,
         attributionControl: false,
         contextmenu: true,
         rotate: true,

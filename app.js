@@ -13,7 +13,7 @@ document.querySelector('#input').oninput = function(){
     }
     else {
         inputItems.forEach(function(elem) {
-            elem.classList.remove('hide');
+            elem.classList.add('hide');
         });
     }
 }

@@ -12,7 +12,7 @@ html, body, #map {
     border-radius: 15px;
     border: none;
     width: 600px;
-    height: 40px;
+    height: 50px;
     background: white;
     z-index: 999;
     top: 30px;
@@ -40,6 +40,7 @@ html, body, #map {
     width: 100%;
     border-radius: 15px;
 
+
 }
 
 .auditories li {
@@ -47,6 +48,42 @@ html, body, #map {
     padding: 10px 25px;
 }
 
+
+
 .auditories li.hide {
     display: none;
+}
+
+
+
+
+@media (max-width: 768px) {
+    .search {
+        width: 500px;
+    }
+}
+
+@media (max-width: 550px) {
+    .search {
+        width: 400px;
+
+    }
+}
+
+@media (max-width: 440px) {
+    .search {
+        width: 350px;
+    }
+}
+
+@media (max-width: 400px) {
+    .search {
+        width: 330px;
+    }
+}
+
+@media (max-width: 300px) {
+    .search {
+        width: 230px;
+    }
 }
