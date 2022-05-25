@@ -2,9 +2,21 @@ body {
     padding: 0;
     margin: 0;
 }
+
+
 html, body, #map {
     height: 100%;
     width: 100%;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
 }
 
 .search {
@@ -31,8 +43,7 @@ html, body, #map {
     padding: 0 14px;
 }
 
-#input:focus {
-}
+
 
 .auditories {
     margin-top: 20px;
@@ -42,13 +53,26 @@ html, body, #map {
     border-radius: 15px;
     overflow: scroll;
     overflow-x: hidden;
+}
 
+.auditories::-webkit-scrollbar-track {
+    background: #A026CA;
+}
 
+.auditories::-webkit-scrollbar-thumb {
+    background-color: #340646;
+    border-radius: 15px;
 }
 
 .auditories li {
     list-style-type: none;
     padding: 10px 25px;
+    cursor: pointer;
+}
+
+.auditories li:hover {
+    background-color: black;
+    color: white;
 }
 
 
@@ -56,6 +80,12 @@ html, body, #map {
 .auditories li.hide {
     display: none;
 }
+
+.hide p {
+    display: block;
+}
+
+
 
 
 
